@@ -1,4 +1,4 @@
-> **Authors:** Wonil La (Penn State University, B.S. Data Science), Zhanhang Sun (Penn State University, B.S. Data Science) · DS 340W Capstone Project
+> **Authors:** Wonil La (Penn State University, B.S. Data Science), Zhenhang Sun (Penn State University, B.S. Data Science) · DS 340W Capstone Project
 >
 > # TrackID3x3 – Final Project (DS 340W)
 
