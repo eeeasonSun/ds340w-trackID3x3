@@ -1,4 +1,6 @@
-# TrackID3x3 – Final Project (DS 340W)
+> **Authors:** Wonil La (Penn State University, B.S. Data Science) · DS 340W Capstone Project
+>
+> # TrackID3x3 – Final Project (DS 340W)
 
 This repository contains my final project for **DS 340W**.  
 Starting from the public **TrackID3x3 / CAMELTrack** 3×3 basketball tracking code, I built an end-to-end, light-weight pipeline that:
