@@ -1,6 +1,6 @@
 > **Authors:** Wonil La (Penn State University, B.S. Data Science), Zhenhang Sun (Penn State University, B.S. Data Science) · DS 340W Capstone Project
 >
-> # TrackID3x3 – Final Project (DS 340W)
+> # TrackID3x3 – Multi-Object Tracking Analysis
 
 This repository contains my final project for **DS 340W**.  
 Starting from the public **TrackID3x3 / CAMELTrack** 3×3 basketball tracking code, I built an end-to-end, light-weight pipeline that:
@@ -13,6 +13,15 @@ Starting from the public **TrackID3x3 / CAMELTrack** 3×3 basketball tracking co
 The goal is that anyone (instructor / TA) can reproduce the results on a laptop **without running any heavy detection / tracking models**.
 
 ---
+## My Contributions
+
+My work on this project focused on post-processing, evaluation, and analysis of multi-object tracking outputs:
+
+- Developed a Python-based pipeline for processing multi-object tracking data in MOT format.
+- Applied temporal smoothing to player trajectories to reduce frame-to-frame positional noise.
+- Implemented short-track filtering to remove unstable trajectories.
+- Evaluated baseline and refined tracking outputs using TI-HOTA metrics.
+- Compared tracking performance across multiple videos and analyzed the resulting movement trajectories.
 
 ›
 
@@ -23,8 +32,6 @@ TrackID3x3/
 ├── BoT-SORT/                 # Third-party multi-object tracker (not re-run in this project)
 ├── CAMELTrack/               # Upstream CAMELTrack detection + tracking code (not re-run)
 ├── CAMELTrack_outputs/       # Pre-computed baseline tracker outputs (MOT text files)
-├── anaconda_projects/        # Conda / Anaconda environment helper (optional)
-│   └── db/                   # Environment metadata from my local setup
 ├── court_images/             # Court images for homography / visualization (from parent repo)
 ├── ground_truth/             # 3×3 tracking ground truth in MOT format
 │   └── Indoor/
@@ -418,6 +425,4 @@ Original tracking & dataset code from the public TrackID3x3 / CAMELTrack and BoT
 
 TI-HOTA metric implementation based on the official HOTA / TI-HOTA code provided by the authors.
 
-
-::contentReference[oaicite:0]{index=0}
 
