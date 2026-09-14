@@ -10,10 +10,10 @@ Starting from the public **TrackID3x3 / CAMELTrack** 3×3 basketball tracking co
 3. **Evaluates tracking quality** with **TI-HOTA** metrics on an indoor 3×3 dataset, and  
 4. **Compares “Baseline vs. OURS”** with summary statistics and a scatter plot.
 
-The goal is that anyone (instructor / TA) can reproduce the results on a laptop **without running any heavy detection / tracking models**.
+The project is designed to be reproducible on a standard laptop without re-running computationally expensive detection or tracking models.
 
 ---
-## My Contributions
+## Zhenhang's Contributions
 
 My work on this project focused on post-processing, evaluation, and analysis of multi-object tracking outputs:
 
@@ -49,9 +49,8 @@ TrackID3x3/
 ├── .gitmodules               # For BoT-SORT and CAMELTrack submodules
 ├── LICENSE.md
 ├── README.md                 # This file
-├── Untitled.ipynb            # Smoothing & saving OURS tracks (see Section 4.2)
+├── smooth_mot_tracks.ipynb            # Smoothing & saving OURS tracks (see Section 4.2)
 ├── Untitled1.ipynb           # TI-HOTA evaluation (Baseline vs. OURS)
-└── Untitled2.ipynb           # Extra analysis / plots (optional)
 ```
 
 2. Dataset
@@ -132,9 +131,6 @@ conda activate trackid3x3
 
 # Basic packages
 pip install numpy pandas matplotlib opencv-python jupyter
-
-
-If you prefer, you can also use the environment metadata in anaconda_projects/db as a reference, but it is not required.
 
 4. Data overview
 4.1 Ground truth (Indoor 3×3)
